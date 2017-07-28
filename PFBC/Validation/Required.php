@@ -1,6 +1,6 @@
 <?php
 class Validation_Required extends Validation {
-	protected $message = "Error: %element% is a required field.";
+	protected $message = "エラー: %element% は必須です";
 
 	public function isValid($value) {
 		$valid = false;

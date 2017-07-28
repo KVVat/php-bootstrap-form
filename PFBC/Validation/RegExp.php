@@ -1,6 +1,6 @@
 <?php
 class Validation_RegExp extends Validation {
-	protected $message = "Error: %element% contains invalid characters.";
+	protected $message = "エラー: %element% に許可されていない文字が含まれています";
 	protected $pattern;
 
 	public function __construct($pattern, $message = "") {

@@ -1,6 +1,6 @@
 <?php
 class Validation_Email extends Validation {
-	protected $message = "Error: %element% must contain an email address.";
+	protected $message = "エラー: %element% はメールアドレスである必要があります。";
 
 	public function isValid($value) {
 		if($this->isNotApplicable($value) || filter_var($value, FILTER_VALIDATE_EMAIL))

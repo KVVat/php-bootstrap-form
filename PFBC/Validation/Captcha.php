@@ -1,6 +1,6 @@
 <?php
 class Validation_Captcha extends Validation {
-	protected $message = "Error: The reCATPCHA response provided was incorrect.  Please re-try.";
+	protected $message = "エラー: reCATPCHA の応答が正しくありません。再度試してください.";
 	protected $privateKey;
 
 	public function __construct($privateKey, $message = "") {

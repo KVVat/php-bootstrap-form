@@ -8,7 +8,7 @@ class MaxLength extends \PFBC\Validation {
 	public function __construct($limit, $message = "") {
 		$this->limit = $limit;
 		if(empty($message))
-			$message = "%element% is limited to " . $limit . " characters.";
+			$message = "%element% は " . $limit . " 文字以内で記入してください。";
 		parent::__construct($message);
 	}
 

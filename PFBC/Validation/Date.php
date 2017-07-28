@@ -1,6 +1,6 @@
 <?php
 class Validation_Date extends Validation {
-    protected $message = "Error: %element% must contain a valid date.";
+    protected $message = "エラー: %element% は正常な日付である必要があります。";
 
     public function isValid($value) {
         try {
