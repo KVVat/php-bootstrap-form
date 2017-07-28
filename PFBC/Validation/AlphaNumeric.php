@@ -1,6 +1,6 @@
 <?php
 class Validation_AlphaNumeric extends Validation_RegExp {
-	protected $message = "ƒGƒ‰[: %element% ‚Í”¼Šp‚Ì‰p”‹L†‚Å‚ ‚é•K—v‚ª‚ ‚è‚Ü‚· (”ŽšA‰pŽšAƒAƒ“ƒ_[ƒXƒRƒA‚¨‚æ‚ÑƒnƒCƒtƒ“‚ª‹–‚³‚ê‚Ü‚·)"
+	protected $message = "ã‚¨ãƒ©ãƒ¼: %element% ã¯åŠè§’ã®è‹±æ•°è¨˜å·ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ (æ•°å­—ã€è‹±å­—ã€ã‚¢ãƒ³ãƒ€ãƒ¼ã‚¹ã‚³ã‚¢ãŠã‚ˆã³ãƒã‚¤ãƒ•ãƒ³ãŒè¨±ã•ã‚Œã¾ã™)"
 
 	public function __construct($message = "") {
 		parent::__construct('/^[a-zA-Z0-9_\-\s\:\,\&]+$/', $message);
