@@ -37,14 +37,14 @@ JS;
             $errors = implode("</li><li>", $errors);
 
             if($size == 1)
-                $format = "error was";
+                $format = "エラーが";
             else
-                $format = $size . " errors were";
+                $format = $size . "個のエラーが";
 
             echo <<<HTML
             <div class="alert alert-danger">
                 <a class="close" data-dismiss="alert" href="#">×</a>
-                <strong class="alert-heading">The following $format found:</strong>
+                <strong class="alert-heading">$format 見つかりました:</strong>
                 <ul><li>$errors</li></ul>
             </div>
 HTML;
