@@ -5,12 +5,12 @@ class ErrorView_Standard extends ErrorView {
         echo <<<JS
         var errorSize = response.errors.length;
         if(errorSize == 1)
-            var errorFormat = "error was";
+            var errorFormat = "エラーが";
         else
-            var errorFormat = errorSize + " errors were";
+            var errorFormat = errorSize + "個のエラーが";
 
         $('.alert-danger').hide();
-        var errorHTML = '<div class="alert alert-danger"><a class="close" data-dismiss="alert" href="#">×</a><strong class="alert-heading">The following ' + errorFormat + ' found:</strong><ul>';
+        var errorHTML = '<div class="alert alert-danger"><a class="close" data-dismiss="alert" href="#">×</a><strong class="alert-heading"> ' + errorFormat + ' 見つかりました:</strong><ul>';
         for(e = 0; e < errorSize; ++e)
             errorHTML += '<li>' + response.errors[e] + '</li>';
         errorHTML += '</ul></div>';
